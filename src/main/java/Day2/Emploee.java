@@ -1,4 +1,4 @@
-package Exercise.day1.Day2;
+package Day2;
 
 import java.time.LocalDate;
 import java.util.Date;

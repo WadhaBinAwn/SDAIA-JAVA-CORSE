@@ -1,4 +1,4 @@
-package Exercise.day1.Day2;
+package Day2;
 
 public class method {
 

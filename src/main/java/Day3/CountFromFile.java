@@ -1,4 +1,4 @@
-package Exercise.day1.Day3;
+package Day3;
 
 import java.io.File;
 import java.io.FileNotFoundException;
