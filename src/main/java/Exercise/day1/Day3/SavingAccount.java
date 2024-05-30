@@ -1,4 +1,4 @@
-package Day3;
+package Exercise.day1.Day3;
 
 public class SavingAccount extends Account{
 

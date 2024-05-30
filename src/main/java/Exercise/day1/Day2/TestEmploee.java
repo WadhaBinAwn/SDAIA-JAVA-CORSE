@@ -1,4 +1,4 @@
-package Day2;
+package Exercise.day1.Day2;
 
 public class TestEmploee {
     public static void main(String[] args) {

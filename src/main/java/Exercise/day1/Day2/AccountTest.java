@@ -1,6 +1,4 @@
-package Day2;
-
-import java.sql.SQLOutput;
+package Exercise.day1.Day2;
 
 public class AccountTest {
     public static void main(String[] args) {

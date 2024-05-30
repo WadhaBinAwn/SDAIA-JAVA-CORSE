@@ -1,4 +1,4 @@
-package Day3;
+package Exercise.day1.Day3;
 
 public class CheckMyAccount extends Account{
 
