@@ -1,4 +1,4 @@
-package Day2;
+package HomeWork;
 
 import java.util.ArrayList;
 
