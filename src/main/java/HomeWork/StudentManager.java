@@ -4,19 +4,19 @@ import java.util.ArrayList;
 
 public class StudentManager {
 
-    private ArrayList<Student> students;
+    private ArrayList<Students> students;
 
 
     public StudentManager() {
         students = new ArrayList<>();
     }
 
-    public void addStudent(Student student) {
+    public void addStudent(Students student) {
         students.add(student);
     }
 
-    public Student getStudentById(int id) {
-        for (Student student : students) {
+    public Students getStudentById(int id) {
+        for (Students student : students) {
             if (student.getId() == id) {
                 return student;
             }
@@ -26,7 +26,7 @@ public class StudentManager {
     }
 
 
-    public ArrayList<Student> getAllStudents() {
+    public ArrayList<Students> getAllStudents() {
         return students;
     }
 
