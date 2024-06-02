@@ -15,7 +15,7 @@ class Student extends Person implements ComparableById {
     }
 
     public void setStudentId(int studentId) {
-        if (studentId <= 0) { // Validate studentId
+        if (studentId <= 0) {
             throw new IllegalArgumentException("Invalid student ID");
         }
         this.studentId = studentId;
@@ -41,7 +41,7 @@ class Student extends Person implements ComparableById {
     }
 
     public String toString() {
-        return getDetails(); // Assuming getDetails() provides the required details
+        return getDetails();
     }
 
 

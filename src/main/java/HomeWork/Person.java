@@ -26,7 +26,7 @@ class Person extends PersonRecord {
     }
 
     public void setAge(int age) {
-        if (age < 0 || age > 150) { // Validate age
+        if (age < 0 || age > 150) {
             throw new IllegalArgumentException("Invalid age");
         }
         this.age = age;
@@ -47,6 +47,6 @@ class Person extends PersonRecord {
 
 
     public String toString() {
-        return getDetails(); // Assuming getDetails() provides the required details
+        return getDetails();
     }
 }
