@@ -1,24 +1,47 @@
 package HomeWork;
 
-public class Student {
+class Student extends Person implements ComparableById {
+    private int studentId;
+    private String course;
 
-    private String name;
-    private int id;
+    public Student(String name, int age, String address, int studentId, String course) {
+        super(name, age, address);
+        setStudentId(studentId);
+        this.course = course;
+    }
 
-    public Student(String name,int id){
-        this.name = name;
-        this.id = id;
+    public int getStudentId() {
+        return studentId;
+    }
 
+    public void setStudentId(int studentId) {
+        if (studentId <= 0) { // Validate studentId
+            throw new IllegalArgumentException("Invalid student ID");
+        }
+        this.studentId = studentId;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+
+    @Override
+    public String getDetails() {
+        return super.getDetails()  +" - " + "  Student Details:  " + "Student ID: " + studentId  +" - " + "Course: " + course;
     }
 
 
-    public String getName(){
-        return name;
+    @Override
+    public boolean compareById(int id) {
+        return this.getStudentId() == id;
     }
 
-
-    public int getId(){
-        return id;
+    public String toString() {
+        return getDetails(); // Assuming getDetails() provides the required details
     }
 
 
