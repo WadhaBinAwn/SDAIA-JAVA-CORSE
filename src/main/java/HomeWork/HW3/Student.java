@@ -1,4 +1,4 @@
-package HomeWork;
+package HomeWork.HW3;
 
 class Student extends Person implements ComparableById {
     private int studentId;

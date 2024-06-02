@@ -1,4 +1,4 @@
-package HomeWork;
+package HomeWork.HW2;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,9 +6,9 @@ public class Main {
 
 
 
-        Students student1 = new Students("Wadha", 1234);
-        Students student2 = new Students("Ali", 5678);
-        Students student3 = new Students("Rand", 9101);
+        Student student1 = new Student("Wadha", 1234);
+        Student student2 = new Student("Ali", 5678);
+        Student student3 = new Student("Rand", 9101);
 
 
         StudentManager m = new StudentManager();
@@ -19,7 +19,7 @@ public class Main {
 
 
         int id = 1234;
-        Students retrieved = m.getStudentById(id);
+        Student retrieved = m.getStudentById(id);
         if (retrieved != null) {
             System.out.println("Student with ID " + id + ": " + retrieved.getName());
         } else {
@@ -27,7 +27,7 @@ public class Main {
         }
 
         System.out.println("All students:");
-        for (Students student : m.getAllStudents()) {
+        for (Student student : m.getAllStudents()) {
             System.out.println(student.getName() + " - " + student.getId());
         }
 
@@ -37,7 +37,7 @@ public class Main {
         System.out.println("Removing student with ID " + removeID );
 
         System.out.println("All students after remove:");
-        for (Students student : m.getAllStudents()) {
+        for (Student student : m.getAllStudents()) {
             System.out.println(student.getName() + " - " + student.getId());
         }
 

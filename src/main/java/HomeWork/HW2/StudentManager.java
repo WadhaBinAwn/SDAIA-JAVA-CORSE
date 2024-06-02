@@ -1,22 +1,22 @@
-package HomeWork;
+package HomeWork.HW2;
 
 import java.util.ArrayList;
 
 public class StudentManager {
 
-    private ArrayList<Students> students;
+    private ArrayList<Student> students;
 
 
     public StudentManager() {
         students = new ArrayList<>();
     }
 
-    public void addStudent(Students student) {
+    public void addStudent(Student student) {
         students.add(student);
     }
 
-    public Students getStudentById(int id) {
-        for (Students student : students) {
+    public Student getStudentById(int id) {
+        for (Student student : students) {
             if (student.getId() == id) {
                 return student;
             }
@@ -26,7 +26,7 @@ public class StudentManager {
     }
 
 
-    public ArrayList<Students> getAllStudents() {
+    public ArrayList<Student> getAllStudents() {
         return students;
     }
 

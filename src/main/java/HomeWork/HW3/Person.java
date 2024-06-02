@@ -1,6 +1,4 @@
-package HomeWork;
-
-import HomeWork.PersonRecord;
+package HomeWork.HW3;
 
 class Person extends PersonRecord {
     private String name;
