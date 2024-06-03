@@ -39,10 +39,10 @@ public class JobDAO {
         st.executeUpdate();
     }
 
-    public Jobs selectJob(String jobId) throws SQLException {
+    public Jobs selectJob(int job_id) throws SQLException {
         Connection conn = DriverManager.getConnection(URL);
         PreparedStatement st = conn.prepareStatement(SELECT_ONE_JOB);
-        st.setString(1, jobId);
+        st.setInt(1, job_id);
         ResultSet rs = st.executeQuery();
         if(rs.next()) {
             return new Jobs(rs);
