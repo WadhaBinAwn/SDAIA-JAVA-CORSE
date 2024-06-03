@@ -1,6 +1,4 @@
-package HW4;
-
-import Day4.Jobs;
+package HomeWork.HW4;
 
 import java.sql.*;
 import java.util.ArrayList;

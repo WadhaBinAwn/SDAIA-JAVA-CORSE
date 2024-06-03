@@ -1,4 +1,4 @@
-package HW4;
+package HomeWork.HW4;
 
 import java.sql.*;
 import java.util.ArrayList;
